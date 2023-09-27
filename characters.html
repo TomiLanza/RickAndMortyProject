@@ -1,0 +1,1184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Characters</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="characters.css">
+</head>
+
+<body>
+  <header>
+    <div class="las">
+      <a href="http://127.0.0.1:5500/index.html">
+        <h1 class="bg-title"> Rick & Morty </h1>
+      </a>
+    </div>
+    <nav>
+      <a href=# class="new-a">Characters</a>
+      <a href="http://127.0.0.1:5500/contact.html" class="new-b">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="main-filter">
+      <div class="filter">
+        <h2 class="text-filter"> Filters</h2>
+      </div>
+      <div class="put-container">
+        <div class="form-check form-switch" id="filter_mail">
+          <input class="form-check-input" type="checkbox" id="alive">
+          <label class="form-check-label" for="alive">Characters Alive</label>
+        </div>
+        <div class="form-check form-switch" id="filter_mail">
+          <input class="form-check-input" type="checkbox" id="dead">
+          <label class="form-check-label" for="dead">Characters Dead</label>
+        </div>
+        <div class="form-check form-switch" id="filter_mail">
+          <input class="form-check-input" type="checkbox" id="female">
+          <label class="form-check-label" for="female">Female</label>
+        </div>
+        <div class="form-check form-switch " id="filter_mail">
+          <input class="form-check-input" type="checkbox" id="male">
+          <label class="form-check-label" for="male">Male</label>
+        </div>
+        <div class="form-check form-switch" id="filter_mail">
+          <input class="form-check-input" type="checkbox" id="origin">
+          <label class="form-check-label" for="origin">Origin Unknown</label>
+        </div>
+      </div>
+    </section>
+    <section class="container">
+      <div class="container-card alive male">
+        <div class="card">
+          <img src="images-characters/Rick_Sanchez.jpg" alt="Rick_Sanchez">
+          <h2 class="rs-text"> Rick Sanchez </h2>
+          <button class="btn-chr btn-rick" onclick="showHideDiv('rick')"> know more... </button>
+        </div>
+        <div class="hdn hdn-rick">
+          <button class="exit-btn" onclick="showHideDiv('rick')">X</button>
+          <ul class="list-group">
+            <li class="list-group-item">
+              <span class="hd-span"> Character Status Alive
+              </span>
+            </li>
+            <li class="list-group-item grp-last"> Species
+              <p class="inside-txt"> Human
+              </p>
+            </li>
+            <li class="list-group-item grp-last"> Origin
+              <p class="inside-txt2"> Earth (C-137)
+              </p>
+            </li>
+            <li class="list-group-item grp-last"> Gender
+              <p class="inside-txt3"> Male
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="container-card alive origin male">
+        <div class="card">
+          <img src="images-characters/Morty_Smith.jpg" alt="Morty Smith">
+          <h2 class="rs-text"> Morty Smith </h2>
+          <button class="btn-chr btn-morty" onclick="showHideDiv('morty')"> know more... </button>
+        </div>
+        <div class="hdn hdn-morty">
+          <button class="exit-btn" onclick="showHideDiv('morty')">X</button>
+          <ul class="list-group">
+            <li class="list-group-item">
+              <span class="hd-span"> Character Status Alive
+              </span>
+            </li>
+            <li class="list-group-item grp-last"> Species
+              <p class="inside-txt"> Human
+              </p>
+            </li>
+            <li class="list-group-item grp-last"> Origin
+              <p class="inside-txt2"> Unknown
+              </p>
+            </li>
+            <li class="list-group-item grp-last"> Gender
+              <p class="inside-txt3"> Male
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="container-card alive female">
+        <div class="card">
+          <img src="images-characters/summer-smith.jpg" alt="Summer Smith">
+          <h2 class="rs-text"> Summer Smith </h2>
+          <button class="btn-chr btn-summer" onclick="showHideDiv('summer')"> know more... </button>
+        </div>
+        <div class="hdn hdn-summer">
+          <button class="exit-btn" onclick="showHideDiv('summer')">X</button>
+          <ul class="list-group">
+            <li class="list-group-item">
+              <span class="hd-span"> Character Status Alive
+              </span>
+            </li>
+            <li class="list-group-item grp-last"> Species
+              <p class="inside-txt"> Human
+              </p>
+            </li>
+            <li class="list-group-item grp-last"> Origin
+              <p class="inside-txt2"> Earth (Replacement Dimension)
+              </p>
+            </li>
+            <li class="list-group-item grp-last"> Gender
+              <p class="inside-txt3"> Female
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="container-card alive female">
+        <div class="card">
+        <img src="images-characters/Beth_Smith.jpg" alt="Beth Smith">
+        <h2 class="rs-text"> Beth Smith </h2>
+        <button class="btn-chr btn-beth" onclick="showHideDiv('beth')"> know more... </button>
+      </div>
+      <div class="hdn hdn-beth">
+        <button class="exit-btn" onclick="showHideDiv('beth')">X</button>
+        <ul class="list-group">
+          <li class="list-group-item">
+            <span class="hd-span"> Character Status Alive
+            </span>
+          </li>
+          <li class="list-group-item grp-last"> Species
+            <p class="inside-txt"> Human
+            </p>
+          </li>
+          <li class="list-group-item grp-last"> Origin
+            <p class="inside-txt2"> Earth (Replacement Dimension)
+            </p>
+          </li>
+          <li class="list-group-item grp-last"> Gender
+            <p class="inside-txt3"> Female
+            </p>
+          </li>
+        </ul>
+      </div>
+      </div>
+      <div class="container-card alive male">
+        <div class="card">
+        <img src="images-characters/Jerry_Smith.jpg" alt="Jerry Smith">
+        <h2 class="rs-text"> Jerry Smith </h2>
+        <button class="btn-chr btn-jerry" onclick="showHideDiv('jerry')"> know more... </button>
+      </div>
+      <div class="hdn hdn-jerry">
+        <button class="exit-btn" onclick="showHideDiv('jerry')">X</button>
+        <ul class="list-group">
+          <li class="list-group-item">
+            <span class="hd-span"> Character Status Alive
+            </span>
+          </li>
+          <li class="list-group-item grp-last"> Species
+            <p class="inside-txt"> Human
+            </p>
+          </li>
+          <li class="list-group-item grp-last"> Origin
+            <p class="inside-txt2"> Earth (Replacement Dimension)
+            </p>
+          </li>
+          <li class="list-group-item grp-last"> Gender
+            <p class="inside-txt3"> Male
+            </p>
+          </li>
+        </ul>
+      </div>
+      </div>
+      <div class="container-card alive female">
+        <div class="card">
+        <img src="images-characters/Abadango_Cluster_Princess.jpg" alt="Abadango Cluster Princess" class="vrtcl-img">
+        <h2 class="rs-text"> Abadango Cluster Princess </h2>
+        <button class="btn-chr btn-abadango" onclick="showHideDiv('abadango')"> know more... </button>
+      </div>
+      <div class="hdn hdn-abadango">
+        <button class="exit-btn" onclick="showHideDiv('abadango')">X</button>
+        <ul class="list-group">
+          <li class="list-group-item">
+            <span class="hd-span"> Character Status Alive
+            </span>
+          </li>
+          <li class="list-group-item grp-last"> Species
+            <p class="inside-txt"> Alien
+            </p>
+          </li>
+          <li class="list-group-item grp-last"> Origin
+            <p class="inside-txt2"> Abadango
+            </p>
+          </li>
+          <li class="list-group-item grp-last"> Gender
+            <p class="inside-txt3"> Female
+            </p>
+          </li>
+        </ul>
+      </div>
+      </div>
+      <div class="container-card male">
+        <div class="card">
+        <img src="images-characters/Abradolf_Lincler.jpg" alt="Abradolf Lincler">
+        <h2 class="rs-text"> Abradolf Lincler </h2>
+        <button class="btn-chr btn-abradolf" onclick="showHideDiv('abradolf')"> know more... </button>
+      </div>
+      <div class="hdn hdn-abradolf">
+        <button class="exit-btn" onclick="showHideDiv('abradolf')">X</button>
+        <ul class="list-group">
+          <li class="list-group-item">
+            <span class="hd-span"> Character Status Unknown
+            </span>
+          </li>
+          <li class="list-group-item grp-last"> Species
+            <p class="inside-txt"> Human
+            </p>
+          </li>
+          <li class="list-group-item grp-last"> Origin
+            <p class="inside-txt2"> Earth (Replacement Dimension)
+            </p>
+          </li>
+          <li class="list-group-item grp-last"> Gender
+            <p class="inside-txt3"> Male
+            </p>
+          </li>
+        </ul>
+      </div>
+      </div>
+      <div class="container-card dead male origin">
+        <div class="card">
+        <img src="images-characters/Adjudicator_Rick.jpg" alt="Adjudicator Rick">
+        <h2 class="rs-text"> Adjudicator Rick </h2>
+        <button class="btn-chr btn-adjudicator" onclick="showHideDiv('adjudicator')"> know more... </button>
+      </div>
+      <div class="hdn hdn-adjudicator">
+        <button class="exit-btn" onclick="showHideDiv('adjudicator')">X</button>
+        <ul class="list-group">
+          <li class="list-group-item">
+            <span class="hd-span"> Character Status Dead
+            </span>
+          </li>
+          <li class="list-group-item grp-last"> Species
+            <p class="inside-txt"> Human
+            </p>
+          </li>
+          <li class="list-group-item grp-last"> Origin
+            <p class="inside-txt2"> Unknown
+            </p>
+          </li>
+          <li class="list-group-item grp-last"> Gender
+            <p class="inside-txt3"> Male
+            </p>
+          </li>
+        </ul>
+      </div>
+      </div>
+      <div class="container-card dead male">
+        <div class="card">
+        <img src="images-characters/Agency_Director.jpg" alt="Agency Director">
+        <h2 class="rs-text"> Agency Director </h2>
+        <button class="btn-chr btn-director" onclick="showHideDiv('director')"> know more... </button>
+      </div>
+      <div class="hdn hdn-director">
+        <button class="exit-btn" onclick="showHideDiv('director')">X</button>
+        <ul class="list-group">
+          <li class="list-group-item">
+            <span class="hd-span"> Character Status Dead
+            </span>
+          </li>
+          <li class="list-group-item grp-last "> Species
+            <p class="inside-txt"> Human
+            </p>
+          </li>
+          <li class="list-group-item grp-last"> Origin
+            <p class="inside-txt2"> Earth (Replacement Dimension)
+            </p>
+          </li>
+          <li class="list-group-item grp-last"> Gender
+            <p class="inside-txt3"> Male
+            </p>
+          </li>
+        </ul>
+      </div>
+      </div>
+      <div class="container-card dead male origin">
+        <div class="card">
+        <img src="images-characters/AlanRails.jpg" alt="Alan Rails">
+        <h2 class="rs-text"> Alan Rails </h2>
+        <button class="btn-chr btn-alan" onclick="showHideDiv('alan')"> know more... </button>
+      </div>
+      <div class="hdn hdn-alan">
+        <button class="exit-btn" onclick="showHideDiv('alan')">X</button>
+        <ul class="list-group">
+          <li class="list-group-item">
+            <span class="hd-span"> Character Status Dead
+            </span>
+          </li>
+          <li class="list-group-item grp-last"> Species
+            <p class="inside-txt"> Human
+            </p>
+          </li>
+          <li class="list-group-item grp-last"> Origin
+            <p class="inside-txt2"> Unknown
+            </p>
+          </li>
+          <li class="list-group-item grp-last"> Gender
+            <p class="inside-txt3"> Male
+            </p>
+          </li>
+        </ul>
+      </div>
+      </div>
+      <div class="container-card dead male">
+        <div class="card">
+        <img src="images-characters/Albert_Einstein.jpg" alt="Albert Einstein">
+        <h2 class="rs-text"> Albert Einstein </h2>
+        <button class="btn-chr btn-albert" onclick="showHideDiv('albert')"> know more... </button>
+      </div>
+      <div class="hdn hdn-albert">
+        <button class="exit-btn" onclick="showHideDiv('albert')">X</button>
+        <ul class="list-group">
+          <li class="list-group-item">
+            <span class="hd-span"> Character Status Dead
+            </span>
+          </li>
+          <li class="list-group-item grp-last"> Species
+            <p class="inside-txt"> Human
+            </p>
+          </li>
+          <li class="list-group-item grp-last"> Origin
+            <p class="inside-txt2"> Earth (C-137)
+            </p>
+          </li>
+          <li class="list-group-item grp-last"> Gender
+            <p class="inside-txt3"> Male
+            </p>
+          </li>
+        </ul>
+      </div>
+      </div>
+      <div class="container-card dead male">
+        <div class="card">
+        <img src="images-characters/Alexander.jpg" alt="Alexander">
+        <h2 class="rs-text"> Alexander </h2>
+        <button class="btn-chr btn-alexander" onclick="showHideDiv('alexander')"> know more... </button>
+      </div>
+      <div class="hdn hdn-alexander">
+        <button class="exit-btn" onclick="showHideDiv('alexander')">X</button>
+        <ul class="list-group">
+          <li class="list-group-item">
+            <span class="hd-span"> Character Status Dead
+            </span>
+          </li>
+          <li class="list-group-item grp-last"> Species
+            <p class="inside-txt"> Human
+            </p>
+          </li>
+          <li class="list-group-item grp-last"> Origin
+            <p class="inside-txt2"> Earth (C-137)
+            </p>
+          </li>
+          <li class="list-group-item grp-last"> Gender
+            <p class="inside-txt3"> Male
+            </p>
+          </li>
+        </ul>
+      </div>
+      </div>
+      <div class="container-card origin">
+        <div class="card">
+        <img src="images-characters/Alien_Googah.jpg" alt="Alien Googah">
+        <h2 class="rs-text"> Alien Googah </h2>
+        <button class="btn-chr btn-googah" onclick="showHideDiv('googah')"> know more... </button>
+      </div>
+      <div class="hdn hdn-googah">
+        <button class="exit-btn" onclick="showHideDiv('googah')">X</button>
+        <ul class="list-group">
+          <li class="list-group-item">
+            <span class="hd-span"> Character Status Unknown
+            </span>
+          </li>
+          <li class="list-group-item grp-last"> Species
+            <p class="inside-txt"> Alien
+            </p>
+          </li>
+          <li class="list-group-item grp-last"> Origin
+            <p class="inside-txt2"> Unknown
+            </p>
+          </li>
+          <li class="list-group-item grp-last"> Gender
+            <p class="inside-txt3"> Unknown
+            </p>
+          </li>
+        </ul>
+      </div>
+      </div>
+      <div class="container-card origin male">
+        <div class="card">
+        <img src="images-characters/Alien_Morty.jpg" alt="Alien Morty">
+        <h2 class="rs-text"> Alien Morty </h2>
+        <button class="btn-chr btn-alienmorty" onclick="showHideDiv('alienmorty')"> know more... </button>
+      </div>
+      <div class="hdn hdn-alienmorty">
+        <button class="exit-btn" onclick="showHideDiv('alienmorty')">X</button>
+        <ul class="list-group">
+          <li class="list-group-item">
+            <span class="hd-span"> Character Status Unknown
+            </span>
+          </li>
+          <li class="list-group-item grp-last"> Species
+            <p class="inside-txt"> Alien
+            </p>
+          </li>
+          <li class="list-group-item grp-last"> Origin
+            <p class="inside-txt2"> Unknown
+            </p>
+          </li>
+          <li class="list-group-item grp-last"> Gender
+            <p class="inside-txt3"> Male
+            </p>
+          </li>
+        </ul>
+      </div>
+      </div>
+      <div class="container-card origin male">
+        <div class="card">
+        <img src="images-characters/Alien_Rick.jpg" alt="Alien Rick">
+        <h2 class="rs-text"> Alien Rick </h2>
+        <button class="btn-chr btn-alienrick" onclick="showHideDiv('alienrick')"> know more... </button>
+      </div>
+      <div class="hdn hdn-alienrick">
+        <button class="exit-btn" onclick="showHideDiv('alienrick')">X</button>
+        <ul class="list-group">
+          <li class="list-group-item">
+            <span class="hd-span"> Character Status Unknown
+            </span>
+          </li>
+          <li class="list-group-item grp-last"> Species
+            <p class="inside-txt"> Alien
+            </p>
+          </li>
+          <li class="list-group-item grp-last"> Origin
+            <p class="inside-txt2"> Unknown
+            </p>
+          </li>
+          <li class="list-group-item grp-last"> Gender
+            <p class="inside-txt3"> Male
+            </p>
+          </li>
+        </ul>
+      </div>
+      </div>
+      <div class="container-card dead origin male">
+        <div class="card">
+        <img src="images-characters/Amish_Cyborg.jpg" alt="Amish Cyborg">
+        <h2 class="rs-text"> Amish Cyborg </h2>
+        <button class="btn-chr btn-amish" onclick="showHideDiv('amish')"> know more... </button>
+      </div>
+      <div class="hdn hdn-amish">
+        <button class="exit-btn" onclick="showHideDiv('amish')">X</button>
+        <ul class="list-group">
+          <li class="list-group-item">
+            <span class="hd-span"> Character Status Dead
+            </span>
+          </li>
+          <li class="list-group-item grp-last"> Species
+            <p class="inside-txt"> Alien
+            </p>
+          </li>
+          <li class="list-group-item grp-last"> Origin
+            <p class="inside-txt2"> Unknown
+            </p>
+          </li>
+          <li class="list-group-item grp-last"> Gender
+            <p class="inside-txt3"> Male
+            </p>
+          </li>
+        </ul>
+      </div>
+      </div>
+      <div class="container-card alive female">
+        <div class="card">
+        <img src="images-characters/Annie.jpg" alt="Annie">
+        <h2 class="rs-text"> Annie </h2>
+        <button class="btn-chr btn-annie" onclick="showHideDiv('annie')"> know more... </button>
+      </div>
+      <div class="hdn hdn-annie">
+        <button class="exit-btn" onclick="showHideDiv('annie')">X</button>
+        <ul class="list-group">
+          <li class="list-group-item">
+            <span class="hd-span"> Character Status Alive
+            </span>
+          </li>
+          <li class="list-group-item grp-last"> Species
+            <p class="inside-txt"> Human
+            </p>
+          </li>
+          <li class="list-group-item grp-last"> Origin
+            <p class="inside-txt2"> Earth (C-137)
+            </p>
+          </li>
+          <li class="list-group-item grp-last"> Gender
+            <p class="inside-txt3"> Female
+            </p>
+          </li>
+        </ul>
+      </div>
+      </div>
+      <div class="container-card alive origin male">
+        <div class="card">
+        <img src="images-characters/Antenna_Morty.jpg" alt="Antenna Morty">
+        <h2 class="rs-text"> Antenna Morty </h2>
+        <button class="btn-chr btn-antennamorty" onclick="showHideDiv('antennamorty')"> know more... </button>
+      </div>
+      <div class="hdn hdn-antennamorty">
+        <button class="exit-btn" onclick="showHideDiv('antennamorty')">X</button>
+        <ul class="list-group">
+          <li class="list-group-item">
+            <span class="hd-span"> Character Status Alive
+            </span>
+          </li>
+          <li class="list-group-item grp-last"> Species
+            <p class="inside-txt"> Human
+            </p>
+          </li>
+          <li class="list-group-item grp-last"> Origin
+            <p class="inside-txt2"> Unknown
+            </p>
+          </li>
+          <li class="list-group-item grp-last"> Gender
+            <p class="inside-txt3"> Male
+            </p>
+          </li>
+        </ul>
+      </div>
+      </div>
+      <div class="container-card origin male">
+        <div class="card">
+        <img src="images-characters/Antenna_Rick.jpg" alt="Antenna Rick">
+        <h2 class="rs-text"> Antenna Rick </h2>
+        <button class="btn-chr btn-antennarick" onclick="showHideDiv('antennarick')"> know more... </button>
+      </div>
+      <div class="hdn hdn-antennarick">
+        <button class="exit-btn" onclick="showHideDiv('antennarick')">X</button>
+        <ul class="list-group">
+          <li class="list-group-item">
+            <span class="hd-span"> Character Status Unknown
+            </span>
+          </li>
+          <li class="list-group-item grp-last"> Species
+            <p class="inside-txt"> Human
+            </p>
+          </li>
+          <li class="list-group-item grp-last"> Origin
+            <p class="inside-txt2"> Unknown
+            </p>
+          </li>
+          <li class="list-group-item grp-last"> Gender
+            <p class="inside-txt3"> Male
+            </p>
+          </li>
+        </ul>
+      </div>
+      </div>
+      <div class="container-card origin male">
+        <div class="card">
+        <img src="images-characters/Ants_in_my_eyes_johnson.jpg" alt="Ants in my Eyes Johnson" class="vrtcl-img">
+        <h2 class="rs-text"> Ants in my Eyes Johnson </h2>
+        <button class="btn-chr btn-ants" onclick="showHideDiv('ants')"> know more... </button>
+      </div>
+      <div class="hdn hdn-ants">
+        <button class="exit-btn" onclick="showHideDiv('ants')">X</button>
+        <ul class="list-group">
+          <li class="list-group-item">
+            <span class="hd-span"> Character Status Unknown
+            </span>
+          </li>
+          <li class="list-group-item grp-last"> Species
+            <p class="inside-txt"> Human
+            </p>
+          </li>
+          <li class="list-group-item grp-last"> Origin
+            <p class="inside-txt2"> Unknown
+            </p>
+          </li>
+          <li class="list-group-item grp-last"> Gender
+            <p class="inside-txt3"> Male
+            </p>
+          </li>
+        </ul>
+      </div>
+      </div>
+      <div class="container-card origin male">
+        <div class="card">
+        <img src="images-characters/Aqua_Morty.jpg" alt="Aqua Morty">
+        <h2 class="rs-text"> Aqua Morty </h2>
+        <button class="btn-chr btn-aquamorty" onclick="showHideDiv('aquamorty')"> know more... </button>
+      </div>
+      <div class="hdn hdn-aquamorty">
+        <button class="exit-btn" onclick="showHideDiv('aquamorty')">X</button>
+        <ul class="list-group">
+          <li class="list-group-item">
+            <span class="hd-span"> Character Status Unknown
+            </span>
+          </li>
+          <li class="list-group-item grp-last"> Species
+            <p class="inside-txt"> Humanoid
+            </p>
+          </li>
+          <li class="list-group-item grp-last"> Origin
+            <p class="inside-txt2"> Unknown
+            </p>
+          </li>
+          <li class="list-group-item grp-last"> Gender
+            <p class="inside-txt3"> Male
+            </p>
+          </li>
+        </ul>
+      </div>
+      </div>
+      <div class="container-card origin male">
+        <div class="card">
+        <img src="images-characters/Aqua_Rick.jpg" alt="Aqua Rick">
+        <h2 class="rs-text"> Aqua Rick </h2>
+        <button class="btn-chr btn-aquarick" onclick="showHideDiv('aquarick')"> know more... </button>
+      </div>
+      <div class="hdn hdn-aquarick">
+        <button class="exit-btn" onclick="showHideDiv('aquarick')">X</button>
+        <ul class="list-group">
+          <li class="list-group-item">
+            <span class="hd-span"> Character Status Unknown
+            </span>
+          </li>
+          <li class="list-group-item grp-last"> Species
+            <p class="inside-txt"> Humanoid
+            </p>
+          </li>
+          <li class="list-group-item grp-last"> Origin
+            <p class="inside-txt2"> Unknown
+            </p>
+          </li>
+          <li class="list-group-item grp-last"> Gender
+            <p class="inside-txt3"> Male
+            </p>
+          </li>
+        </ul>
+      </div>
+      </div>
+      <div class="container-card origin male">
+        <div class="card">
+        <img src="images-characters/Arcade_Alien_Guy.jpg" alt="Arcade Alien Guy">
+        <h2 class="rs-text"> Arcade Alien Guy </h2>
+        <button class="btn-chr btn-arcade" onclick="showHideDiv('arcade')"> know more... </button>
+      </div>
+      <div class="hdn hdn-arcade">
+        <button class="exit-btn" onclick="showHideDiv('arcade')">X</button>
+        <ul class="list-group">
+          <li class="list-group-item">
+            <span class="hd-span"> Character Status Unknown
+            </span>
+          </li>
+          <li class="list-group-item grp-last"> Species
+            <p class="inside-txt"> Alien
+            </p>
+          </li>
+          <li class="list-group-item grp-last"> Origin
+            <p class="inside-txt2"> Unknown
+            </p>
+          </li>
+          <li class="list-group-item grp-last"> Gender
+            <p class="inside-txt3"> Male
+            </p>
+          </li>
+        </ul>
+      </div>
+      </div>
+      <div class="container-card alive male">
+        <div class="card">
+        <img src="images-characters/Armagheadon.jpg" alt="Armagheadon">
+        <h2 class="rs-text"> Armagheadon </h2>
+        <button class="btn-chr btn-armagheadon" onclick="showHideDiv('armagheadon')"> know more... </button>
+      </div>
+      <div class="hdn hdn-armagheadon">
+        <button class="exit-btn" onclick="showHideDiv('armagheadon')">X</button>
+        <ul class="list-group">
+          <li class="list-group-item">
+            <span class="hd-span"> Character Status Alive
+            </span>
+          </li>
+          <li class="list-group-item grp-last"> Species
+            <p class="inside-txt"> Alien
+            </p>
+          </li>
+          <li class="list-group-item grp-last"> Origin
+            <p class="inside-txt2"> Signus 5 Expanse
+            </p>
+          </li>
+          <li class="list-group-item grp-last"> Gender
+            <p class="inside-txt3"> Male
+            </p>
+          </li>
+        </ul>
+      </div>
+      </div>
+      <div class="container-card dead male">
+        <div class="card">
+        <img src="images-characters/Armothy.jpg" alt="Armothy">
+        <h2 class="rs-text"> Armothy </h2>
+        <button class="btn-chr btn-armothy" onclick="showHideDiv('armothy')"> know more... </button>
+      </div>
+      <div class="hdn hdn-armothy">
+        <button class="exit-btn" onclick="showHideDiv('armothy')">X</button>
+        <ul class="list-group">
+          <li class="list-group-item">
+            <span class="hd-span"> Character Status Dead
+            </span>
+          </li>
+          <li class="list-group-item grp-last"> Species
+            <p class="inside-txt"> Unknown
+            </p>
+          </li>
+          <li class="list-group-item grp-last"> Origin
+            <p class="inside-txt2"> Post-Apocalyptic Earth
+            </p>
+          </li>
+          <li class="list-group-item grp-last"> Gender
+            <p class="inside-txt3"> Male
+            </p>
+          </li>
+        </ul>
+      </div>
+      </div>
+      <div class="container-card alive female">
+        <div class="card">
+        <img src="images-characters/Arthricia.jpg" alt="Arthricia">
+        <h2 class="rs-text"> Arthricia </h2>
+        <button class="btn-chr btn-arthricia" onclick="showHideDiv('arthricia')"> know more... </button>
+      </div>
+      <div class="hdn hdn-arthricia">
+        <button class="exit-btn" onclick="showHideDiv('arthricia')">X</button>
+        <ul class="list-group">
+          <li class="list-group-item">
+            <span class="hd-span"> Character Status Alive
+            </span>
+          </li>
+          <li class="list-group-item grp-last"> Species
+            <p class="inside-txt"> Alien
+            </p>
+          </li>
+          <li class="list-group-item grp-last"> Origin
+            <p class="inside-txt2"> Purge Planet
+            </p>
+          </li>
+          <li class="list-group-item grp-last"> Gender
+            <p class="inside-txt3"> Female
+            </p>
+          </li>
+        </ul>
+      </div>
+      </div>
+      <div class="container-card alive origin male">
+        <div class="card">
+        <img src="images-characters/Artist_Morty.jpg" alt="Artist Morty">
+        <h2 class="rs-text"> Artist Morty </h2>
+        <button class="btn-chr btn-artistmorty" onclick="showHideDiv('artistmorty')"> know more... </button>
+      </div>
+      <div class="hdn hdn-artistmorty">
+        <button class="exit-btn" onclick="showHideDiv('artistmorty')">X</button>
+        <ul class="list-group">
+          <li class="list-group-item">
+            <span class="hd-span"> Character Status Alive
+            </span>
+          </li>
+          <li class="list-group-item grp-last"> Species
+            <p class="inside-txt"> Human
+            </p>
+          </li>
+          <li class="list-group-item grp-last"> Origin
+            <p class="inside-txt2"> Unknown
+            </p>
+          </li>
+          <li class="list-group-item grp-last"> Gender
+            <p class="inside-txt3"> Male
+            </p>
+          </li>
+        </ul>
+      </div>
+      </div>
+      <div class="container-card alive origin male">
+        <div class="card">
+        <img src="images-characters/Attila_Starwar.jpg" alt="Attila Starwar">
+        <h2 class="rs-text"> Attila Starwar </h2>
+        <button class="btn-chr btn-attila" onclick="showHideDiv('attila')"> know more... </button>
+      </div>
+      <div class="hdn hdn-attila">
+        <button class="exit-btn" onclick="showHideDiv('attila')">X</button>
+        <ul class="list-group">
+          <li class="list-group-item">
+            <span class="hd-span"> Character Status Alive
+            </span>
+          </li>
+          <li class="list-group-item grp-last"> Species
+            <p class="inside-txt"> Human
+            </p>
+          </li>
+          <li class="list-group-item grp-last"> Origin
+            <p class="inside-txt2"> Unknown
+            </p>
+          </li>
+          <li class="list-group-item grp-last"> Gender
+            <p class="inside-txt3"> Male
+            </p>
+          </li>
+        </ul>
+      </div>
+      </div>
+      <div class="container-card alive origin male">
+        <div class="card">
+        <img src="images-characters/Baby_Legs.jpg" alt="Baby Legs">
+        <h2 class="rs-text"> Baby Legs </h2>
+        <button class="btn-chr btn-babylegs" onclick="showHideDiv('babylegs')"> know more... </button>
+      </div>
+      <div class="hdn hdn-babylegs">
+        <button class="exit-btn" onclick="showHideDiv('babylegs')">X</button>
+        <ul class="list-group">
+          <li class="list-group-item">
+            <span class="hd-span"> Character Status Alive
+            </span>
+          </li>
+          <li class="list-group-item grp-last"> Species
+            <p class="inside-txt"> Human
+            </p>
+          </li>
+          <li class="list-group-item grp-last"> Origin
+            <p class="inside-txt2"> Unknown
+            </p>
+          </li>
+          <li class="list-group-item grp-last"> Gender
+            <p class="inside-txt3"> Male
+            </p>
+          </li>
+        </ul>
+      </div>
+      </div>
+      <div class="container-card alive origin male">
+        <div class="card">
+        <img src="images-characters/Baby_Poopybutthole.jpg" alt="Baby Poopybutthole" class="vrtcl-img">
+        <h2 class="rs-text"> Baby Poopybutthole </h2>
+        <button class="btn-chr btn-babypoopy" onclick="showHideDiv('babypoopy')"> know more... </button>
+      </div>
+      <div class="hdn hdn-babypoopy">
+        <button class="exit-btn" onclick="showHideDiv('babypoopy')">X</button>
+        <ul class="list-group">
+          <li class="list-group-item">
+            <span class="hd-span"> Character Status Alive
+            </span>
+          </li>
+          <li class="list-group-item grp-last"> Species
+            <p class="inside-txt"> Poopybutthole
+            </p>
+          </li>
+          <li class="list-group-item grp-last"> Origin
+            <p class="inside-txt2"> Unknown
+            </p>
+          </li>
+          <li class="list-group-item grp-last"> Gender
+            <p class="inside-txt3"> Male
+            </p>
+          </li>
+        </ul>
+      </div>
+      </div>
+      <div class="container-card dead origin male">
+        <div class="card">
+        <img src="images-characters/Baby_Wizard.jpg" alt="Baby Wizard">
+        <h2 class="rs-text"> Baby Wizard </h2>
+        <button class="btn-chr btn-babywizard" onclick="showHideDiv('babywizard')"> know more... </button>
+      </div>
+      <div class="hdn hdn-babywizard">
+        <button class="exit-btn" onclick="showHideDiv('babywizard')">X</button>
+        <ul class="list-group">
+          <li class="list-group-item">
+            <span class="hd-span"> Character Status Dead
+            </span>
+          </li>
+          <li class="list-group-item grp-last"> Species
+            <p class="inside-txt"> Alien
+            </p>
+          </li>
+          <li class="list-group-item grp-last"> Origin
+            <p class="inside-txt2"> Unknown
+            </p>
+          </li>
+          <li class="list-group-item grp-last"> Gender
+            <p class="inside-txt3"> Male
+            </p>
+          </li>
+        </ul>
+      </div>
+      </div>
+      <div class="container-card dead origin female">
+        <div class="card">
+        <img src="images-characters/Bearded_Lady.jpg" alt="Bearded Lady">
+        <h2 class="rs-text"> Bearded Lady </h2>
+        <button class="btn-chr btn-bearded" onclick="showHideDiv('bearded')"> know more... </button>
+      </div>
+      <div class="hdn hdn-bearded">
+        <button class="exit-btn" onclick="showHideDiv('bearded')">X</button>
+        <ul class="list-group">
+          <li class="list-group-item">
+            <span class="hd-span"> Character Status Dead
+            </span>
+          </li>
+          <li class="list-group-item grp-last"> Species
+            <p class="inside-txt"> Alien
+            </p>
+          </li>
+          <li class="list-group-item grp-last"> Origin
+            <p class="inside-txt2"> Unknown
+            </p>
+          </li>
+          <li class="list-group-item grp-last"> Gender
+            <p class="inside-txt3"> Female
+            </p>
+          </li>
+        </ul>
+      </div>
+      </div>
+      <div class="container-card dead male">
+        <div class="card">
+        <img src="images-characters/Beebo.jpg" alt="Beebo">
+        <h2 class="rs-text"> Beebo </h2>
+        <button class="btn-chr btn-beebo" onclick="showHideDiv('beebo')"> know more... </button>
+      </div>
+      <div class="hdn hdn-beebo">
+        <button class="exit-btn" onclick="showHideDiv('beebo')">X</button>
+        <ul class="list-group">
+          <li class="list-group-item">
+            <span class="hd-span"> Character Status Dead
+            </span>
+          </li>
+          <li class="list-group-item grp-last"> Species
+            <p class="inside-txt"> Alien
+            </p> 
+          </li>
+          <li class="list-group-item grp-last"> Origin
+            <p class="inside-txt2"> Venzenulon 7
+            </p>
+          </li>
+          <li class="list-group-item grp-last"> Gender
+            <p class="inside-txt3"> Male
+            </p>
+          </li>
+        </ul>
+      </div>
+      </div>
+      <div class="container-card alive origin male">
+        <div class="card">
+        <img src="images-characters/Benjamin.jpg" alt="Benjamin">
+        <h2 class="rs-text"> Benjamin </h2>
+        <button class="btn-chr btn-benjamin" onclick="showHideDiv('benjamin')"> know more... </button>
+      </div>
+      <div class="hdn hdn-benjamin">
+        <button class="exit-btn" onclick="showHideDiv('benjamin')">X</button>
+        <ul class="list-group">
+          <li class="list-group-item">
+            <span class="hd-span"> Character Status Alive
+            </span>
+          </li>
+          <li class="list-group-item grp-last"> Species
+            <p class="inside-txt"> Poopybutthole
+            </p>
+          </li>
+          <li class="list-group-item grp-last"> Origin
+            <p class="inside-txt2"> Unknown
+            </p>
+          </li>
+          <li class="list-group-item grp-last"> Gender
+            <p class="inside-txt3"> Male
+            </p>
+          </li>
+        </ul>
+      </div>
+      </div>
+      <div class="container-card alive">
+        <div class="card">
+        <img src="images-characters/Bepisian.jpg" alt="Bepisian">
+        <h2 class="rs-text"> Bepisian </h2>
+        <button class="btn-chr btn-bepisian" onclick="showHideDiv('bepisian')"> know more... </button>
+      </div>
+      <div class="hdn hdn-bepisian">
+        <button class="exit-btn" onclick="showHideDiv('bepisian')">X</button>
+        <ul class="list-group">
+          <li class="list-group-item">
+            <span class="hd-span"> Character Status Alive
+            </span>
+          </li>
+          <li class="list-group-item grp-last"> Species
+            <p class="inside-txt"> Alien
+            </p>
+          </li>
+          <li class="list-group-item grp-last"> Origin
+            <p class="inside-txt2"> Bepis 9
+            </p>
+          </li>
+          <li class="list-group-item grp-last"> Gender
+            <p class="inside-txt3"> Unknown
+            </p>
+          </li>
+        </ul>
+      </div>
+      </div>
+      <div class="container-card alive origin">
+        <div class="card">
+        <img src="images-characters/Beta_Seven.jpg" alt="Beta-Seven">
+        <h2 class="rs-text"> Beta-Seven </h2>
+        <button class="btn-chr btn-betaseven" onclick="showHideDiv('betaseven')"> know more... </button>
+      </div>
+      <div class="hdn hdn-betaseven">
+        <button class="exit-btn" onclick="showHideDiv('betaseven')">X</button>
+        <ul class="list-group">
+          <li class="list-group-item">
+            <span class="hd-span"> Character Status Alive
+            </span>
+          </li>
+          <li class="list-group-item grp-last"> Species
+            <p class="inside-txt"> Alien
+            </p>
+          </li>
+          <li class="list-group-item grp-last"> Origin
+            <p class="inside-txt2"> Unknown
+            </p>
+          </li>
+          <li class="list-group-item grp-last"> Gender
+            <p class="inside-txt3"> Unknown
+            </p>
+          </li>
+        </ul>
+      </div>
+      </div>
+      <div class="container-card alive female">
+        <div class="card">
+        <img src="images-characters/Beth_Sanchez.jpg" alt="Beth Sanchez">
+        <h2 class="rs-text"> Beth Sanchez </h2>
+        <button class="btn-chr btn-btsnch" onclick="showHideDiv('btsnch')"> know more... </button>
+      </div>
+      <div class="hdn hdn-btsnch">
+        <button class="exit-btn" onclick="showHideDiv('btsnch')">X</button>
+        <ul class="list-group">
+          <li class="list-group-item">
+            <span class="hd-span"> Character Status Alive
+            </span>
+          </li>
+          <li class="list-group-item grp-last"> Species
+            <p class="inside-txt"> Human
+            </p>
+          </li>
+          <li class="list-group-item grp-last"> Origin
+            <p class="inside-txt2"> Earth (C-500A)
+            </p>
+          </li>
+          <li class="list-group-item grp-last"> Gender
+            <p class="inside-txt3"> Female
+            </p>
+          </li>
+        </ul>
+      </div>
+      </div>
+      <div class="container-card alive female">
+        <div class="card">
+        <img src="images-characters/Beth_Smith_1.jpg" alt="Beth Smith">
+        <h2 class="rs-text"> Beth Smith </h2>
+        <button class="btn-chr btn-btsnch2" onclick="showHideDiv('btsnch2')"> know more... </button>
+      </div>
+      <div class="hdn hdn-btsnch2">
+        <button class="exit-btn" onclick="showHideDiv('btsnch2')">X</button>
+        <ul class="list-group">
+          <li class="list-group-item">
+            <span class="hd-span"> Character Status Alive
+            </span>
+          </li>
+          <li class="list-group-item grp-last"> Species
+            <p class="inside-txt"> Human
+            </p>
+          </li>
+          <li class="list-group-item grp-last"> Origin
+            <p class="inside-txt2"> Earth (C-137)
+            </p>
+          </li>
+          <li class="list-group-item grp-last"> Gender
+            <p class="inside-txt3"> Female
+            </p>
+          </li>
+        </ul>
+      </div>
+      </div>
+      <div class="container-card alive female">
+        <div class="card">
+        <img src="images-characters/Beth_Smith_2.jpg" alt="Beth Smith">
+        <h2 class="rs-text"> Beth Smith </h2>
+        <button class="btn-chr btn-btsnch3" onclick="showHideDiv('btsnch3')"> know more... </button>
+      </div>
+      <div class="hdn hdn-btsnch3">
+        <button class="exit-btn" onclick="showHideDiv('btsnch3')">X</button>
+        <ul class="list-group">
+          <li class="list-group-item">
+            <span class="hd-span"> Character Status Alive
+            </span>
+          </li>
+          <li class="list-group-item grp-last"> Species
+            <p class="inside-txt"> Human
+            </p>
+          </li>
+          <li class="list-group-item grp-last"> Origin
+            <p class="inside-txt2"> Earth (Evil Rick's Target Dimension)
+            </p>
+          </li>
+          <li class="list-group-item grp-last"> Gender
+            <p class="inside-txt3"> Female
+            </p>
+          </li>
+        </ul>
+      </div>
+      </div>
+      <div class="container-card dead female">
+        <div class="card">
+        <img src="images-characters/Beth's_Mytholog.jpg" alt="Beth's Mytholog">
+        <h2 class="rs-text"> Beth's Mytholog </h2>
+        <button class="btn-chr btn-mytholog" onclick="showHideDiv('mytholog')"> know more... </button>
+      </div>
+      <div class="hdn hdn-mytholog">
+        <button class="exit-btn" onclick="showHideDiv('mytholog')">X</button>
+        <ul class="list-group">
+          <li class="list-group-item">
+            <span class="hd-span"> Character Status Dead
+            </span>
+          </li>
+          <li class="list-group-item grp-last"> Species
+            <p class="inside-txt"> Mythological Creature
+            </p>
+          </li>
+          <li class="list-group-item grp-last"> Origin
+            <p class="inside-txt2"> Nuptia 4
+            </p>
+          </li>
+          <li class="list-group-item grp-last"> Gender
+            <p class="inside-txt3"> Female
+            </p>
+          </li>
+        </ul>
+      </div>
+      </div>
+    </section>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="characters.js"></script>
+</body>
+
+</html>
